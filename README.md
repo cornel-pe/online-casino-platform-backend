@@ -32,7 +32,7 @@ graph LR
   API --> DB[(MongoDB)]
 
   %% Premium / private modules (not in this repo)
-  subgraph PremiumModules[Premium Modules (private)]
+  subgraph PremiumModules[Premium Modules]
     Pay[Payment Service]
     Bots[Bot Service]
     Risk[Risk & Treasury Alerts]
