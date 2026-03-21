@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify your email – {{app_name}}</title>
+  <style type="text/css">
+    @font-face {
+      font-family: "Geogrotesque Wide";
+      src: url("{{frontend_url}}/assets/fonts/geogrotesque-wide-regular.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Geogrotesque Wide";
+      src: url("{{frontend_url}}/assets/fonts/geogrotesque-wide-bold.woff2") format("woff2");
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+    }
+  </style>
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+</head>
+<body style="margin:0; padding:0; background-color:#030E14; font-family: 'Geogrotesque Wide', Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#030E14; min-height:100vh; font-family: 'Geogrotesque Wide', Arial, Helvetica, sans-serif;">
+    <tr>
+      <td align="center" style="padding: 40px 20px;">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width: 480px;">
+          <!-- Logo / Brand -->
+          <tr>
+            <td align="center" style="padding-bottom: 32px;">
+              <span style="font-size: 28px; font-weight: 700; color: #FFE81A; letter-spacing: 0.5px; font-family: 'Geogrotesque Wide', Arial, sans-serif;">{{app_name}}</span>
+            </td>
+          </tr>
+          <!-- Card -->
+          <tr>
+            <td style="background-color: #04141C; border-radius: 12px; padding: 40px 32px; border: 1px solid rgba(255, 232, 26, 0.15); font-family: 'Geogrotesque Wide', Arial, Helvetica, sans-serif;">
+              <h1 style="margin: 0 0 8px 0; font-size: 22px; font-weight: 700; color: #ededed; letter-spacing: 0.3px; font-family: 'Geogrotesque Wide', Arial, sans-serif;">
+                Verify your email
+              </h1>
+              <p style="margin: 0 0 28px 0; font-size: 15px; line-height: 1.55; color: rgba(237, 237, 237, 0.85);">
+                Thanks for signing up. Click the button below to verify your email and activate your account.
+              </p>
+              <!-- CTA Button -->
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td align="center" style="padding: 8px 0 28px 0;">
+                    <a href="{{verification_link}}" target="_blank" rel="noopener noreferrer" style="display: inline-block; text-decoration: none; background-color: #FFE81A; color: #141722; font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 14px 32px; border-radius: 8px; box-shadow: 0 0 10px rgba(255, 176, 25, 0.4), 0 1px 0 rgba(255,255,255,0.2) inset; font-family: 'Geogrotesque Wide', Arial, sans-serif;">
+                      Verify email
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <p style="margin: 0; font-size: 13px; line-height: 1.5; color: rgba(237, 237, 237, 0.6);">
+                If the button doesn’t work, copy and paste this link into your browser:
+              </p>
+              <p style="margin: 8px 0 0 0; word-break: break-all;">
+                <a href="{{verification_link}}" style="color: #FFE81A; font-size: 13px; text-decoration: underline;">{{verification_link}}</a>
+              </p>
+              <p style="margin: 24px 0 0 0; font-size: 12px; line-height: 1.5; color: rgba(237, 237, 237, 0.5);">
+                This link expires in 24 hours. If you didn’t create an account with {{app_name}}, you can ignore this email.
+              </p>
+            </td>
+          </tr>
+          <!-- Footer -->
+          <tr>
+            <td align="center" style="padding-top: 32px;">
+              <p style="margin: 0; font-size: 12px; color: rgba(237, 237, 237, 0.45);">
+                © {{current_year}} {{app_name}}. All rights reserved.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
